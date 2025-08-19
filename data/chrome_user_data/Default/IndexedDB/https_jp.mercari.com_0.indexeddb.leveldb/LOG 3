@@ -1,0 +1,7 @@
+2025/08/18-17:18:08.303 31f84f Reusing MANIFEST /Users/a81906/Desktop/mercari-automation/data/chrome_user_data/Default/IndexedDB/https_jp.mercari.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/18-17:18:08.304 31f84f Recovering log #7
+2025/08/18-17:18:08.305 31f84f Reusing old log /Users/a81906/Desktop/mercari-automation/data/chrome_user_data/Default/IndexedDB/https_jp.mercari.com_0.indexeddb.leveldb/000007.log 
+2025/08/18-17:18:08.707 31f847 Compacting 1@1 + 1@2 files
+2025/08/18-17:18:08.733 31f847 Generated table #10@1: 18369 keys, 983826 bytes
+2025/08/18-17:18:08.733 31f847 Compacted 1@1 + 1@2 files => 983826 bytes
+2025/08/18-17:18:08.736 31f847 compacted to: files[ 0 0 1 0 0 0 0 ]

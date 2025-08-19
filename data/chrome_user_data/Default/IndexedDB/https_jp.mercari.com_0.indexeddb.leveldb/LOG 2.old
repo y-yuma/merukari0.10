@@ -1,0 +1,5 @@
+2025/08/18-17:13:47.630 31e1f7 Creating DB /Users/a81906/Desktop/mercari-automation/data/chrome_user_data/Default/IndexedDB/https_jp.mercari.com_0.indexeddb.leveldb since it was missing.
+2025/08/18-17:13:47.634 31e1f7 Reusing MANIFEST /Users/a81906/Desktop/mercari-automation/data/chrome_user_data/Default/IndexedDB/https_jp.mercari.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/18-17:13:48.228 31e1f7 Level-0 table #5: started
+2025/08/18-17:13:48.245 31e1f7 Level-0 table #5: 948396 bytes OK
+2025/08/18-17:13:48.247 31e1f7 Delete type=0 #3

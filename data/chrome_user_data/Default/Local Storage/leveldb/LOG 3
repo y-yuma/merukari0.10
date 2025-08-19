@@ -1,0 +1,9 @@
+2025/08/18-17:18:07.644 31f887 Reusing MANIFEST /Users/a81906/Desktop/mercari-automation/data/chrome_user_data/Default/Local Storage/leveldb/MANIFEST-000001
+2025/08/18-17:18:07.648 31f887 Recovering log #5
+2025/08/18-17:18:07.648 31f887 Level-0 table #8: started
+2025/08/18-17:18:07.656 31f887 Level-0 table #8: 71311 bytes OK
+2025/08/18-17:18:07.656 31f887 Recovering log #7
+2025/08/18-17:18:07.657 31f887 Reusing old log /Users/a81906/Desktop/mercari-automation/data/chrome_user_data/Default/Local Storage/leveldb/000007.log 
+2025/08/18-17:18:07.659 31f887 Delete type=0 #5
+2025/08/18-17:18:32.433 31f889 Level-0 table #10: started
+2025/08/18-17:18:32.457 31f889 Level-0 table #10: 71788 bytes OK

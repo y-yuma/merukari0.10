@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# システム固有
+.DS_Store
+Thumbs.db
+
+# プロジェクト固有
+.env
+.encryption_key
+config.ini
+data/database.db
+data/backup/
+logs/
+results/
+drivers/
+*.log
+
+# 一時ファイル
+temp/
+tmp/
+cache/
+
+# 商品画像（大量になるため）
+data/images/mercari/*
+data/images/alibaba/*
+!data/images/mercari/.gitkeep
+!data/images/alibaba/.gitkeep
+
+# AIモデルファイル（サイズが大きいため）
+data/models/*.h5
+data/models/*.pkl
+!data/models/.gitkeep
+
+# 機密情報
+*.key
+*.pem
+credentials.json
