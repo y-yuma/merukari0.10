@@ -2,9 +2,9 @@
 Modules package initialization
 """
 
-from .research import MercariResearcher, ProductExtractor
+# 新しいスクレイパーのみインポート（RPAは使わない）
+from .scraper import MercariScraper
 
 __all__ = [
-    'MercariResearcher',
-    'ProductExtractor'
+    'MercariScraper'
 ]
