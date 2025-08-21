@@ -1,0 +1,91 @@
+# メルカリ監視設定
+search:
+  # 監視するキーワード（複数可）
+  keywords:
+    - "ワイヤレスマウス"
+    - "ゲーミングマウス"
+    - "ロジクール マウス"
+  
+  # 検索条件
+  conditions:
+    status: "on_sale"        # on_sale（販売中）/ sold_out（売り切れ）
+    item_condition: 1        # 1:新品 2:未使用に近い 3:目立った傷なし 4:やや傷 5:傷あり 6:全体的に状態悪い
+    shipping_payer: true     # true:送料込み false:指定なし
+    price_min: 500          # 最低価格
+    price_max: 5000         # 最高価格
+    sort: "created_time"    # created_time:新着順 price:価格順 num_likes:いいね順
+    order: "desc"           # desc:降順 asc:昇順
+
+# 画像フィルター設定
+image_filter:
+  enabled: true             # 画像判定を有効化
+  
+  # プロ画像の特徴
+  professional_features:
+    white_background: true   # 白背景
+    multiple_angles: true    # 複数アングル
+    has_package: true       # パッケージあり
+    min_resolution: 500     # 最小解像度（ピクセル）
+  
+  # NGワード（商品タイトルや説明）
+  ng_words:
+    - "ジャンク"
+    - "故障"
+    - "動作未確認"
+    - "パーツ取り"
+  
+  # OKワード（優先的に通知）
+  ok_words:
+    - "新品"
+    - "未開封"
+    - "保証書付き"
+    - "国内正規品"
+
+# 監視設定
+monitor:
+  interval: 300             # チェック間隔（秒）= 5分
+  max_items_per_check: 30   # 1回の最大取得件数
+  
+  # 通知設定
+  notification:
+    enabled: true
+    min_price_drop: 20      # 20%以上の値下げで通知
+    
+    # LINE Notify（トークン取得: https://notify-bot.line.me/）
+    line:
+      enabled: false
+      token: "YOUR_LINE_NOTIFY_TOKEN"
+    
+    # Discord Webhook
+    discord:
+      enabled: false
+      webhook_url: "YOUR_DISCORD_WEBHOOK_URL"
+    
+    # ローカル通知（デスクトップ通知）
+    local:
+      enabled: true
+      sound: true           # 音を鳴らす
+
+# データ保存設定
+storage:
+  database: "mercari.db"    # SQLiteデータベース
+  images_dir: "images/"     # 画像保存ディレクトリ
+  csv_export: true          # CSV出力
+  json_export: true         # JSON出力
+  
+  # 古いデータの自動削除
+  cleanup:
+    enabled: true
+    keep_days: 30           # 30日以上前のデータを削除
+
+# システム設定
+system:
+  debug: false              # デバッグモード
+  log_level: "INFO"         # DEBUG, INFO, WARNING, ERROR
+  max_retries: 3           # リトライ回数
+  timeout: 10              # タイムアウト（秒）
+  
+  # レート制限（マナー）
+  rate_limit:
+    min_interval: 2        # 最小アクセス間隔（秒）
+    random_delay: true     # ランダム遅延を追加
